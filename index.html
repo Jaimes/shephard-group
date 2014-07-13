@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Page Title</title>
+		<link rel="stylesheet" type="text/css" href="normalize.css" />
+		<link rel="stylesheet" type="text/css" href="style.css" />
+	</head>
+	<body>
+		<header id="site-header">
+			<div class="site-header-inner">
+				<div class="brand">Brand</div>
+				<nav>
+					<a href="#">Home</a>
+					<a href="#">About</a>
+					<a href="contact.html">Contact</a>
+				</nav>
+			</div>
+		</header>
+		<div id="header-img"></div>
+
+		<div id="main" class="no-margin-top">
+			<section>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer venenatis condimentum arcu, ac scelerisque metus commodo a. Vivamus laoreet lorem diam, quis ornare tellus facilisis vel. Sed eu varius magna. Sed felis elit, ornare vitae leo viverra, vehicula placerat odio. Quisque accumsan convallis orci fermentum euismod. Pellentesque eget odio placerat, hendrerit lorem sed, viverra tellus. Ut leo lorem, tempus in dignissim a, cursus nec nibh. Praesent ullamcorper, urna eu varius tincidunt, dui odio ullamcorper urna, sit amet mattis nunc nisl eget mauris. Nulla ac enim magna. Vivamus massa nisi, mollis vel mauris eu, suscipit venenatis quam. In ultrices est in massa sodales tincidunt.</p>
+				<p>Aenean eget dolor et justo porttitor iaculis. Nunc sit amet lacus suscipit, vestibulum tortor sit amet, pharetra libero. Ut id volutpat turpis. Aenean eu diam quis turpis pharetra dictum ut vitae ligula. Phasellus eu massa dui. Quisque sed orci non erat lacinia tincidunt eu elementum dui. Maecenas quis sodales tortor. Aenean a ante in arcu viverra adipiscing. Suspendisse potenti. Aliquam eget hendrerit odio. Curabitur ut velit posuere, convallis enim et, pharetra lorem. Etiam posuere odio nec egestas egestas. Sed nec pharetra lorem. Maecenas ligula tortor, tempor ut aliquam a, gravida eu libero. Nulla et nibh a sem dignissim scelerisque.</p>
+			</section>
+			<section class="section-taupe">
+				<p>Cras vestibulum elit a turpis bibendum ultrices. Quisque vitae nisi sapien. Vestibulum sollicitudin dolor eu purus tempus euismod. Proin quis nisi a enim venenatis auctor. Suspendisse convallis fringilla purus at sollicitudin. Cras vitae nunc lobortis, pharetra odio ac, porttitor lectus. Donec sagittis tortor quis lorem mollis lobortis. Mauris vel suscipit lectus, semper tincidunt orci. Mauris ullamcorper lacinia rhoncus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Maecenas lobortis eros et sapien egestas, in placerat elit venenatis. Vivamus nisl massa, ultricies ut mattis id, condimentum sit amet magna. Nullam vitae nulla vel felis interdum interdum. Aliquam diam massa, ultricies laoreet iaculis quis, aliquam ut neque. Quisque mollis tincidunt semper.</p>
+				<p>Suspendisse magna metus, porta at leo vel, tempor gravida lacus. Pellentesque rhoncus felis arcu, ut mattis dolor ultricies sit amet. Aliquam malesuada augue id tincidunt aliquam. Vivamus id justo massa. Mauris luctus dolor eget velit dignissim condimentum. Donec pretium eleifend urna, et rhoncus nisl eleifend nec. Suspendisse cursus consequat tellus, ut suscipit eros tincidunt sit amet. Ut eget nulla lacus. Aliquam scelerisque felis enim, ut congue elit sodales nec. Phasellus et ullamcorper velit. Integer ultricies quis ipsum a lacinia. Duis pretium quam eget mauris ullamcorper suscipit. Nulla nunc est, pellentesque vitae gravida eu, pretium nec nulla. Phasellus nec tincidunt lacus. Duis congue risus sit amet sapien convallis ullamcorper. Sed eros eros, feugiat sed lectus eu, facilisis fringilla diam.</p>
+				<p>In scelerisque nibh eu tempor posuere. Integer nec nunc posuere, fringilla nisl vel, eleifend leo. Vivamus eu erat ut lorem vulputate condimentum vehicula ac erat. Ut a velit posuere, faucibus dolor vel, mollis tellus. Morbi vitae odio a urna euismod gravida. Sed sit amet vulputate dui. Integer sollicitudin venenatis lacus ut ultricies. Praesent a arcu nunc. Maecenas turpis arcu, condimentum nec placerat sed, suscipit vel lacus. Nulla ac laoreet nunc, rhoncus mollis leo. Etiam enim odio, mattis condimentum nisi vel, accumsan ultricies ante. Aenean cursus gravida massa, sed pulvinar leo.</p>
+			</section>
+		</div>
+
+
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+		<script>
+			$(window).scroll( function() {
+				var scroll = $(window).scrollTop();
+
+				if (scroll >= 200) {
+					$("#site-header").addClass("shrink");
+				} else {
+					$("#site-header").removeClass("shrink");
+				}
+			});
+		</script>
+	</body>
+</html>

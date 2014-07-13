@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Page Title</title>
+		<link rel="stylesheet" type="text/css" href="normalize.css" />
+		<link rel="stylesheet" type="text/css" href="style.css" />
+	</head>
+	<body>
+		<header id="site-header">
+			<div class="site-header-inner">
+				<div class="brand">Brand</div>
+				<nav>
+					<a href="index.html">Home</a>
+					<a href="#">About</a>
+					<a href="#">Contact</a>
+				</nav>
+			</div>
+		</header>
+		<div id="main">
+			<section>
+				<h2>Contact Us</h2>
+				<div id="map" class="col">
+					<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2895.6652637285715!2d-83.97064494973755!3d43.46758509817295!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x3674a2d92c5b903c!2sKeller+Williams+Realty+-+Saginaw!5e0!3m2!1sen!2sus!4v1405194285652" width="600" height="450" frameborder="0" style="border:1"></iframe>
+				</div>
+				<div class="col">
+					<address>
+						Keller Williams Realty</br>
+						<strong>The Shephard Group</strong> </br>
+						4177 Fashion Square Blvd #3</br>
+						Saginaw, MI 48603
+					</address>
+				</div>
+			</section>
+		</div>
+		
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+		<script>
+			$(window).scroll( function() {   
+				var scroll = $(window).scrollTop();
+
+				if (scroll >= 200) {
+					$("#site-header").addClass("shrink");
+				} else {
+					$("#site-header").removeClass("shrink");
+				}
+			});
+		</script>
+	</body>
+</html>
